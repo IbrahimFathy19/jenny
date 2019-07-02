@@ -26,6 +26,34 @@
         {{-- Personal --}}
         <div class="mb-5">
           <h3 class="h3 border-bottom border-info mb-3 pb-2">{{ __('Personal information')}}</h3>
+
+          <fieldset class="form-group">
+            <div class="row pt-3">
+              <div class="col">
+                <label class="vertical" for="profile_photo">Profile Photo</label>
+              </div>
+              <div class="col">
+                      
+                  <div class="p-image">
+                    <i class="fa fa-camera upload-button"><div class="circle">
+                        <!-- User Profile Image -->
+                        <img class="profile-pic" src="{{__($user_data->profile_photo_path)}}">
+                  
+                        <!-- Default Image -->
+                        <!-- <i class="fa fa-user fa-5x"></i> -->
+                      </div></i>
+                      <input class="file-upload" name="profile_photo_path" type="file"/>
+                </div>
+                @if ($errors->has('profile_photo_path'))
+                <span class="invalid-feedback" role="alert" >
+                  <strong>{{ $errors->first('profile_photo_path') }}</strong>
+                </span>
+                @endif
+              </div>
+              
+            </div>
+          </fieldset>
+
           <fieldset class="form-group">
             <div class="row">
               <div class="col">
@@ -49,38 +77,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
-            <div class="row pt-3">
-              <div class="col">
-                <label class="vertical" for="profile_photo">Profile Photo</label>
-              </div>
-              <div class="col">
-                      
-                  <div class="p-image">
-                    <i class="fa fa-camera upload-button"><div class="circle">
-                        <!-- User Profile Image -->
-                        <img class="profile-pic" src="{{__($user_data->profile_photo_path)}}">
-                  
-                        <!-- Default Image -->
-                        <!-- <i class="fa fa-user fa-5x"></i> -->
-                      </div></i>
-                      <input class="file-upload" type="file" accept="image/*"/>
-                </div>
-              </div>
-              
-              {{-- @if ($errors->has('first_name'))
-              <span class="invalid-feedback" role="alert" >
-                <strong>{{ $errors->first('first_name') }}</strong>
-              </span>
-              @endif
-
-              @if ($errors->has('last_name'))
-              <span class="invalid-feedback" role="alert" >
-                <strong>{{ $errors->first('last_name') }}</strong>
-              </span>
-              @endif                --}}
-            </div>
-            </fieldset>
+          
         </div>
       </form>
     </div>

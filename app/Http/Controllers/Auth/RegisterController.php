@@ -66,8 +66,9 @@ class RegisterController extends Controller
 
     public static function create_user_profile(array $data)
     {
-        $fileName = 'default.png';
-        if (! is_string($data['profile_photo_path'])) {
+        $fileName = 'images/users/' . 'default.png';
+        if (array_key_exists('profile_photo_path', $data)){
+            if (! is_string($data['profile_photo_path'])) {
             if ($data['profile_photo_path']->isValid()) {
                 $destinationPath = public_path('images/users');
                 $extension = $data['profile_photo_path']->getClientOriginalExtension();
@@ -78,6 +79,7 @@ class RegisterController extends Controller
         else {
             $fileName = $data['profile_photo_path'];
         }
+    }
         
         //create user credintials
         $user_profile = UserProfile::create([

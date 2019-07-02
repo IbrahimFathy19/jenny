@@ -157,35 +157,30 @@ use PragmaRX\Countries\Package\Countries;
 						</div>
 
             <div class="row justify-content-center">
-              <div class="col-md-6 form-group">
-                      
-                      <div class="p-image">
-                        <i class="fa fa-camera upload-button"><div class="circle">
-                            <!-- User Profile Image -->
-                            <img class="profile-pic" src="">
-                      
-                            <!-- Default Image -->
-                            <!-- <i class="fa fa-user fa-5x"></i> -->
-                          </div></i>
-                          <input class="file-upload" id="profile_photo_path" name="profile_photo_path" value="{{ old('profile_photo_path') }}" type="file" accept="image/*"/>
-                    </div>
-                  </div>
-                  <div class="invalid-feedback">
-                      @if ($errors->has('profile_photo_path'))
-                          <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('profile_photo_path') }}</strong>
-                          </span>
-                      @endif
-                  </div>
-  							{{-- <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="profile_photo_path" name="profile_photo_path" value="{{ old('profile_photo_path') }}">
-                  <label class="custom-file-label col-form-label" for="profile_photo_path">{{ __('Choose Photo') }}</label>
-
-                  
-                </div> --}}
-              </div>							
-            </div>
-            
+				<div class="col-md-4 text-md-left vertical">Profile picture</div>
+				
+				<div class="col-md-8 form-group">      
+					<div class="p-image">
+						<i class="fa fa-camera upload-button">
+							<div class="circle">
+							<!-- User Profile Image -->
+							<img class="profile-pic" src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwizkY6O1pbjAhVLUxoKHZ_RC8gQjRx6BAgBEAU&url=http%3A%2F%2Frollacosta.in%2Fabout-us%2Fdummy-pic%2F&psig=AOvVaw0A08ZQ8foUzRsXOuXFgz3A&ust=1562171860528865">
+						
+							<!-- Default Image -->
+							<!-- <i class="fa fa-user fa-5x"></i> -->
+							</div>
+						</i>
+						<input class="file-upload" id="profile_photo_path" name="profile_photo_path" value="{{ old('profile_photo_path') }}" type="file" accept="image/*"/>
+					</div>
+					<div class="invalid-feedback">
+						@if ($errors->has('profile_photo_path'))
+							<span class="invalid-feedback" role="alert">
+							<strong>{{ $errors->first('profile_photo_path') }}</strong>
+							</span>
+						@endif
+					</div>
+            	</div>
+            </div>							
             <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group required row">
