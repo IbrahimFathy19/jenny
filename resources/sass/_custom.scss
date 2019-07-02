@@ -1,0 +1,104 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  #mainMenu {
+
+    -webkit-gradient:(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url('/images/app/bg-masthead.jpg');
+    background-image: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('/images/app/bg-masthead.jpg');
+    background-position-x: center;
+    background-position-y: center;
+    height: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+}
+
+.user_profile_pic_small {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 8px;
+  }
+
+  .main-login-form {
+      width: 90%;
+      background:rgba(90, 71, 72, 0.85);
+  }
+
+  #mainMenu {
+
+    min-height: 100vh;
+  }
+
+  html {
+      font-size: 105%;
+  }
+
+  
+.form-group.required .col-form-label:after {
+  content:"*";
+  color:red;
+}
+
+.profile-pic {
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+}
+
+.file-upload {
+  display: none;
+}
+.circle {
+  border-radius: 1000px !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  border: 8px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  background: #666666;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.p-image {
+position: absolute;
+
+color: #666666;
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+font-size: 1.2em;
+}
+
+.upload-button:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+color: #999;
+}
+.vertical{
+  margin-top:10%;
+  }
