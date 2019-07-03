@@ -25,4 +25,14 @@ class ProfileController extends Controller
     {
         return view('pages.profile');
     }
+
+    public function getSessions()
+    {
+        return view('pages.sessions');
+    }
+
+    public function getInterests()
+    {
+        return view('pages.interests');
+    }
 }
