@@ -20,7 +20,9 @@ Route::get('/services', 'PageController@services');
 
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
-Route::get('profile/', 'ProfileController@index');
+Route::get('/profile', 'ProfileController@index');
+Route::get('/sessions', 'ProfileController@getSessions')->name('sessions');
+Route::get('/interests', 'ProfileController@getInterests')->name('interests');
 
 
 Route::get('/assistant-settings', 'Settings@get_assistant_settings')->name('assistant-settings');
