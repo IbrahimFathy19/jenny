@@ -33,7 +33,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/assistant-settings';
+    protected $redirectTo = '/profile';
 
     /**
      * Create a new controller instance.
