@@ -13,7 +13,7 @@
       <img class="card-img-top" src="images\app\interests2.jpg" alt="interests">
       <div class="card-body">
         <p class="card-text">your interests that provide deep insight into your psyche</p>
-        <a href="#" class="btn btn-light btn-lg">interests</a>
+        <a href="{{ route('interests') }}" class="btn btn-light btn-lg">interests</a>
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
       <img class="card-img-top" src="images\app\sessions2.jpg" alt="sessions">
       <div class="card-body">
         <p class="card-text">Happy times come and go, but the memories stay forever</p>
-        <a href="#" class="btn btn-light btn-lg">sessions</a>
+        <a href="{{ route('sessions') }}" class="btn btn-light btn-lg">sessions</a>
       </div>
     </div>
   </div>
