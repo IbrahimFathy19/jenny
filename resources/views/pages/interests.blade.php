@@ -16,37 +16,54 @@
   </ol>
 </nav>
 
-<div class="card-columns">
-    <div class="card">
+<div class="row">
+  <div class="col-sm-7">
+    <div class="card text-center p-3 mb-2 text-dark" style="width: 18rem;background:navajowhite">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-title">Food</p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Food
+        </a>
       </div>
     </div>
   </div>
+  
+ <div class="col">
+    <div class="card text-center p-3 mb-2 text-dark" style="width: 18rem;background:navajowhite">
+      <div class="card-body">
+        <p class="card-title">Sports</p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Sports
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-7">
+    <div class="card text-center p-3 mb-2 text-dark" style="width: 18rem;background:navajowhite">
+      <div class="card-body">
+        <p class="card-title">Music</p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+           Food
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card text-center p-3 mb-2 text-dark" style="width: 18rem;background:navajowhite">
+      <div class="card-body">
+        <p class="card-title">Places</p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Food
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    test.
+  </div>
+</div>
+
 @endsection

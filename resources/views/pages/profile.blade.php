@@ -13,7 +13,21 @@
       <img class="card-img-top" src="images\app\interests2.jpg" alt="interests">
       <div class="card-body">
         <p class="card-text">your interests that provide deep insight into your psyche</p>
-        <a href="{{ route('interests') }}" class="btn btn-light btn-lg">interests</a>
+        <div class="panel-group" role="tablist"> 
+            <div class="panel panel-default"> 
+                <div class="panel-heading" role="tab" id="collapseListGroupHeading1"> 
+                    <h4 class="panel-title"> 
+                        <a href="#collapseListGroup1" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseListGroup1"> Interests </a> </h4> 
+                </div> 
+                <div class="panel-collapse collapse" role="tabpanel" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="height: 0px;"> 
+                    <ul class="list-group"> 
+                        <li class="list-group-item">Music</li> 
+                        <li class="list-group-item">Foods</li> 
+                        <li class="list-group-item">Sports</li> </ul> 
+                        <div class="list-group-item">Places</div>
+                </div> 
+            </div> 
+        </div>
       </div>
     </div>
   </div>
