@@ -6,7 +6,7 @@
 @endsection
 @section('content')
 <!-- Card -->
-<div class="card card-image" style="background-image: url('../images/app/image.png');background-size: 1440px 1300px;
+<div class="card card-image" style="background-image: url('../images/app/2.jpg');background-size: 1440px 1300px;
 background-repeat:no-repeat;">
   {{--  <img class="card-img-top" src="img_avatar1.png" alt="Card image">
     <div class="card-img-overlay">--}}
